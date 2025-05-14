@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main>
+      <div
+        class="w-screen h-screen bg-linear-to-bl from-violet-500 to-fuchsia-500 py-10"
+      >
+        <div
+          class="w-[650px] h-[600px] m-auto bg-linear-to-t from-sky-500 to-indigo-500 rounded-xl flex-wrap"
+        >
+          <h2 class="text-white text-3xl font-bold text-center h-[5%] pt-3">Reviews :</h2>
+          <div class="reviewList h-[40%] p-5"></div>
+          <div
+            class="w-full flex justify-center items-center flex-wrap h-[55%]"
+          >
+            <textarea
+              class="reviewField bg-linear-to-r from-blue-200 to-sky-200 w-[500px] h-[200px] rounded-xl p-5 placeholder:: text-xl font-normal"
+              placeholder="Type Your Review "
+              name="textarea"
+              id=""
+              rows=""
+              cols=""
+            ></textarea>
+            <div class="flex justify-around items-center w-full mt-5 mb-5">
+              <button
+                class="submitBtn w-[130px] h-[50px] bg-linear-to-t from-[#aa430c] to-[#5b4031] text-white text-lg font-semibold rounded-xl hover:cursor-pointer"
+              >
+                Submit
+              </button>
+              <button
+                class="resetBtn w-[130px] h-[50px] bg-white text-lg font-semibold rounded-xl hover:cursor-pointer"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
